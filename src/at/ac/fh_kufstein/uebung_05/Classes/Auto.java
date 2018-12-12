@@ -6,9 +6,9 @@ public class Auto extends Fahrzeug{
     private short airbags;
 
     //Konstruktor
-    public Auto(short reifen, String farbe, short ps, short tueren, boolean gestartet, short geschwindigkeit, boolean klimaanlage, short airbags) {
-        super(reifen, farbe, ps, tueren, gestartet, geschwindigkeit);
-        this.klimaanlage=klimaanlage;
+    public Auto(short reifen, String farbe, short ps, short tueren, short airbags) {
+        super(reifen, farbe, ps, tueren);
+        this.klimaanlage=false;
         this.airbags=airbags;
     }
     public void klimaanlageAn(){

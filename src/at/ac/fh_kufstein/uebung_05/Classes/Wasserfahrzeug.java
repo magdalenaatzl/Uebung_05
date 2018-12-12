@@ -7,8 +7,8 @@ public class Wasserfahrzeug extends Fahrzeug{
 
     //Konstruktur
 
-    public Wasserfahrzeug(short reifen, String farbe, short ps, short tueren, boolean gestartet, short geschwindigkeit, double tiefgang, short schrauben, double ladung) {
-        super(reifen, farbe, ps, tueren, gestartet, geschwindigkeit);
+    public Wasserfahrzeug(short reifen, String farbe, short ps, short tueren, double tiefgang, short schrauben, double ladung) {
+        super(reifen, farbe, ps, tueren);
         this.tiefgang=tiefgang;
         this.schrauben=schrauben;
         this.ladung=ladung;
