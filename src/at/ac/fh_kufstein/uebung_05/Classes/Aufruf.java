@@ -1,5 +1,8 @@
 package at.ac.fh_kufstein.uebung_05.Classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aufruf {
 
     public static void main(String[] args) {
@@ -11,6 +14,18 @@ public class Aufruf {
         System.out.println(bmw);
         System.out.println(audi);
         System.out.println(titanic);
+
+        List<Fahrzeug> a = new ArrayList<>();
+
+        a.add(bmw);
+        a.add(audi);
+        a.add(titanic);
+        System.out.println("\nAufgabe 7");
+        for(Fahrzeug item : a){
+            System.out.println(item);
+
+        }
+
 
     }
 }
