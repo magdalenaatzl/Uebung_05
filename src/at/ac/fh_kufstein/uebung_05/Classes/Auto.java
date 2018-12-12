@@ -11,6 +11,14 @@ public class Auto extends Fahrzeug{
         this.klimaanlage=false;
         this.airbags=airbags;
     }
+
+    //Methoden
+
+    @Override
+    public String toString(){
+        return "Mein Auto hat "+this.getPs()+" PS und fährt mit "+this.getGeschwindigkeit()+" km/h";
+    }
+
     public void klimaanlageAn(){
         if (getKlimaanlage()==true){
             System.out.println("Klima läuft bereits");
@@ -19,6 +27,8 @@ public class Auto extends Fahrzeug{
             setKlimaanlage(true);
         }
     }
+
+    //Getter und Setter
 
     public boolean getKlimaanlage() {
         return klimaanlage;

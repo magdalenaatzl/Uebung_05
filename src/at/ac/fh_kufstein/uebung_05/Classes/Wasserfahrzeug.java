@@ -19,6 +19,11 @@ public class Wasserfahrzeug extends Fahrzeug{
         Thread.sleep(5000);
     }
 
+    @Override
+    public String toString(){
+        return "Mein Wasserfahrzeug hat "+this.getPs()+" PS und einen Tiefgang von "+getTiefgang()+" m";
+    }
+
     //Getter und setter
     public double getTiefgang() {
         return tiefgang;
