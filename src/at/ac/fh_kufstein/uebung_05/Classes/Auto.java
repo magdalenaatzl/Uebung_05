@@ -11,5 +11,28 @@ public class Auto extends Fahrzeug{
         this.klimaanlage=klimaanlage;
         this.airbags=airbags;
     }
+    public void klimaanlageAn(){
+        if (getKlimaanlage()==true){
+            System.out.println("Klima läuft bereits");
+        }
+        else {
+            setKlimaanlage(true);
+        }
+    }
 
+    public boolean getKlimaanlage() {
+        return klimaanlage;
+    }
+
+    public void setKlimaanlage(boolean klimaanlage) {
+        this.klimaanlage = klimaanlage;
+    }
+
+    public short getAirbags() {
+        return airbags;
+    }
+
+    public void setAirbags(short airbags) {
+        this.airbags = airbags;
+    }
 }

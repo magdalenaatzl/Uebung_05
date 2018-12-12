@@ -11,23 +11,28 @@ public class Fahrzeug {
 
     //Konstruktor
 
-    public Fahrzeug(short reifen, String farbe, short ps, short tueren, boolean gestartet, short geschwindigkeit) {
+    public Fahrzeug(short reifen, String farbe, short ps, short tueren, short geschwindigkeit) {
         this.reifen = reifen;
         this.farbe = farbe;
         this.ps = ps;
         this.tueren = tueren;
-        this.gestartet = gestartet;
+        this.gestartet = false;
         this.geschwindigkeit = geschwindigkeit;
+        this.anzahl=+1;
     }
 
     //Methoden
 
     public void starten (){
-        setGestartet(true);
+        if (getGestartet()==false){
+        setGestartet(true);}
+        else {System.err.println("Auto ist bereits gestartet");}
     }
 
     public void stoppen () {
-        setGestartet(false);
+        if (getGestartet()==true){
+            setGestartet(false);}
+        else {System.err.println("Auto steht bereits");}
     }
 
     public void beschleunigen (short speed){
